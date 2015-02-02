@@ -11,9 +11,29 @@
 
     <name>Logopaed - Parent</name>
 
+
+    <scm>
+        <connection>scm:git:https://github.com/lcmatrix/logopaed.git</connection>
+        <developerConnection>scm:git:https://github.com/lcmatrix/logopaed.git</developerConnection>
+    </scm>
+
+
     <modules>
         <module>app</module>
         <!-- <module>delivery</module> -->
     </modules>
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
