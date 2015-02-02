@@ -15,12 +15,12 @@
         <Menu mnemonicParsing="false" text="%logopaed.menu.menu">
           <items>
             <MenuItem mnemonicParsing="false" text="%logopaed.menu.settings" />
-            <MenuItem mnemonicParsing="false" text="%logopaed.menu.menu.quit" />
+            <MenuItem mnemonicParsing="false" onAction="#closeApp" text="%logopaed.menu.menu.quit" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="%logopaed.menu.help">
           <items>
-            <MenuItem fx:id="closeMenuItem" onAction="#closeApp" text="%logopaed.menu.help.about" />
+            <MenuItem mnemonicParsing="false" text="%logopaed.menu.help.about" />
           </items>
         </Menu>
       </menus>
