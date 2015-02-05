@@ -30,7 +30,7 @@ public class LogopaedMainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        rootLayout = FXMLLoader.load(getClass().getResource("rootLayout.fxml"), ResourceBundle.getBundle("message"));
+        rootLayout = FXMLLoader.load(getClass().getResource("fxml/rootLayout.fxml"), ResourceBundle.getBundle("i18n/message"));
         stage.setTitle("Logopaed");
         stage.setScene(new Scene(rootLayout));
         stage.show();

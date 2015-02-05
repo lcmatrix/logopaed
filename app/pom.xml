@@ -42,11 +42,23 @@
                         <configuration>
                             <encoding>UTF-8</encoding>
                             <includes>
-                                <include>message*.properties</include>
+                                <include>**\/message*.properties</include>
                             </includes>
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>LogopaedMainApp</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
             </plugin>
         </plugins>
     </build>
