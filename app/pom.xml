@@ -59,5 +59,20 @@
             <systemPath>${java.home}/lib/ext/jfxrt.jar</systemPath>
             <scope>system</scope>
         </dependency>
+
+        <dependency>
+            <groupId>net.sf.supercsv</groupId>
+            <artifactId>super-csv</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+
+        <!-- Test -->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
