@@ -5,17 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>logopaed</groupId>
-        <artifactId>logopaed-parent</artifactId>
+        <groupId>logoquiz</groupId>
+        <artifactId>logoquiz-parent</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>logopaed</groupId>
-    <artifactId>logopaed-app</artifactId>
+    <groupId>logoquiz</groupId>
+    <artifactId>logoquiz-app</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Logopaed - Application</name>
+    <name>Logoquiz - Application</name>
 
 
     <build>
@@ -56,7 +56,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>LogopaedMainApp</mainClass>
+                            <mainClass>LogoquizMainApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

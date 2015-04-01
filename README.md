@@ -1,6 +1,6 @@
-# Logopaed App
+# Logoquiz App
 
-Welcome to my Logopaed app.
+Welcome to my Logoquiz app.
 
 ## What is it?
 TODO

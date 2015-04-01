@@ -1,6 +1,7 @@
-package control;/*
+/*
  * Created by norman on 01.02.15.
  */
+package control;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +14,7 @@ import java.io.IOException;
 import java.util.ResourceBundle;
 
 /**
- * Main controller for logopaed.
+ * Main controller for logoquiz.
  */
 public class MainController {
 

@@ -4,17 +4,17 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>logopaed</groupId>
-    <artifactId>logopaed-parent</artifactId>
+    <groupId>logoquiz</groupId>
+    <artifactId>logoquiz-parent</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Logopaed - Parent</name>
+    <name>Logoquiz - Parent</name>
 
 
     <scm>
-        <connection>scm:git:https://github.com/lcmatrix/logopaed.git</connection>
-        <developerConnection>scm:git:https://github.com/lcmatrix/logopaed.git</developerConnection>
+        <connection>scm:git:https://github.com/lcmatrix/logoquiz.git</connection>
+        <developerConnection>scm:git:https://github.com/lcmatrix/logoquiz.git</developerConnection>
     </scm>
 
 

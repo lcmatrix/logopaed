@@ -11,9 +11,9 @@ import javafx.stage.Stage;
 import java.util.ResourceBundle;
 
 /**
- * Main class for Logopaed app.
+ * Main class for Logoquiz app.
  */
-public class LogopaedMainApp extends Application {
+public class LogoquizMainApp extends Application {
 
     /**
      * Root layout of the application.
@@ -31,7 +31,7 @@ public class LogopaedMainApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         rootLayout = FXMLLoader.load(getClass().getResource("fxml/rootLayout.fxml"), ResourceBundle.getBundle("i18n/message"));
-        stage.setTitle("Logopaed");
+        stage.setTitle("Logoquiz");
         stage.setScene(new Scene(rootLayout));
         stage.show();
     }

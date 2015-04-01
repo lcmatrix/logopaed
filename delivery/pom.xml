@@ -5,16 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>logopaed</groupId>
-        <artifactId>logopaed-parent</artifactId>
+        <groupId>logoquiz</groupId>
+        <artifactId>logoquiz-parent</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>logopaed</groupId>
-    <artifactId>logopaed-delivery</artifactId>
+    <groupId>logoquiz</groupId>
+    <artifactId>logoquiz-delivery</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Logopaed - Delivery</name>
+    <name>Logoquiz - Delivery</name>
 
 </project>
