@@ -2,25 +2,32 @@
 
 <?import javafx.scene.input.*?>
 <?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="%logopaed.menu.menu">
           <items>
-            <MenuItem mnemonicParsing="false" text="%logopaed.menu.settings" />
-            <MenuItem mnemonicParsing="false" onAction="#closeApp" text="%logopaed.menu.menu.quit" />
+            <MenuItem mnemonicParsing="false" onAction="#add" text="%logopaed.menu.settings" />
+            <MenuItem mnemonicParsing="false" onAction="#closeApp" text="%logopaed.menu.menu.quit">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="B" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="%logopaed.menu.help">
           <items>
-            <MenuItem mnemonicParsing="false" text="%logopaed.menu.help.about" />
+            <MenuItem mnemonicParsing="false" onAction="#showHelpDialog" text="%logopaed.menu.help.about">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
           </items>
         </Menu>
       </menus>
