@@ -88,8 +88,11 @@ public class MainController {
         }
     }
 
+    /**
+     * Load and set game scene.
+     */
     @FXML
-    protected void startGame() {
+    protected void loadGameScene() {
         System.out.println("Spiel gestartet...");
         try {
             FXMLLoader loader = new FXMLLoader();
@@ -103,6 +106,10 @@ public class MainController {
         }
     }
 
+    /**
+     * Setter for mainApp.
+     * @param mainApp the {@link LogoquizMainApp} instance
+     */
     public void setMainApp(LogoquizMainApp mainApp) {
         this.mainApp = mainApp;
     }
