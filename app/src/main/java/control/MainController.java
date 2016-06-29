@@ -6,6 +6,7 @@ package control;
 import java.io.IOException;
 import java.util.ResourceBundle;
 
+import app.LogoquizMainApp;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,12 +15,15 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
  * Main controller for logoquiz.
  */
 public class MainController {
+
+    private LogoquizMainApp mainApp;
 
     @FXML
     private AnchorPane contentPane;
@@ -69,6 +73,8 @@ public class MainController {
 
             Stage helpStage = new Stage();
             helpStage.setTitle(loader.getResources().getString("logopad.help.title"));
+            helpStage.initOwner(mainApp.getPrimaryStage());
+            helpStage.initModality(Modality.WINDOW_MODAL);
             Scene helpScene = new Scene(helpPane);
             helpStage.setScene(helpScene);
 
@@ -95,5 +101,9 @@ public class MainController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void setMainApp(LogoquizMainApp mainApp) {
+        this.mainApp = mainApp;
     }
 }
