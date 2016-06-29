@@ -42,6 +42,21 @@ public class MainController {
     }
 
     /**
+     * TODO
+     */
+    @FXML
+    protected void changeSettings() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/fxml/rootScene.fxml"));
+            loader.setResources(ResourceBundle.getBundle("i18n/message"));
+            Pane pane = loader.load();
+            contentPane.getChildren().add(pane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    /**
      * Open help dialog.
      */
     @FXML
