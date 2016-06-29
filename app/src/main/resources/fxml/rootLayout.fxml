@@ -15,7 +15,7 @@
       <menus>
         <Menu mnemonicParsing="false" text="%logopaed.menu.menu">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#add" text="%logopaed.menu.settings" />
+            <MenuItem mnemonicParsing="false" onAction="#changeSettings" text="%logopaed.menu.settings" />
             <MenuItem mnemonicParsing="false" onAction="#closeApp" text="%logopaed.menu.menu.quit">
                      <accelerator>
                         <KeyCodeCombination alt="UP" code="B" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
@@ -34,11 +34,16 @@
     </MenuBar>
     <AnchorPane fx:id="contentPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="24.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="599.0" style="&#10;" text="%logopaed.label.intro" wrapText="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="20.0">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
+            <Button fx:id="startButton" layoutX="14.0" layoutY="322.0" mnemonicParsing="false" onAction="#startGame" text="%logopaed.button.start.game">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
       </children>
     </AnchorPane>
   </children>

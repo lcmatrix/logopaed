@@ -3,15 +3,18 @@
  */
 package control;
 
+import java.io.IOException;
+import java.util.ResourceBundle;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-import java.util.ResourceBundle;
 
 /**
  * Main controller for logoquiz.
@@ -20,6 +23,15 @@ public class MainController {
 
     @FXML
     private AnchorPane contentPane;
+
+    @FXML
+    private TextField anzahlWoerterInput;
+
+    @FXML
+    private TextField eingabeZeitspanne;
+
+    @FXML
+    private Button startButton;
 
     /**
      * Closes the app.
@@ -50,6 +62,21 @@ public class MainController {
 
             helpStage.showAndWait();
 
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    protected void startGame() {
+        System.out.println("Spiel gestartet...");
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/fxml/gameScene.fxml"));
+            loader.setResources(ResourceBundle.getBundle("i18n/message"));
+            VBox gamePane = loader.load();
+            contentPane.getChildren().clear();
+            contentPane.getChildren().add(gamePane);
         } catch (IOException e) {
             e.printStackTrace();
         }
