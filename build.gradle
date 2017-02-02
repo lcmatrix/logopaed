@@ -1,0 +1,25 @@
+group = 'logoquiz'
+version = 0.1
+
+apply plugin: 'application'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+mainClassName = 'app.LogoquizMainApp'
+
+jar {
+    manifest {
+        attributes('Implementation-Titel' : 'Logoquiz',
+                'Implementation-Version' : version)
+    }
+}
+
+repositories {
+    mavenLocal()
+    // mavenCentral()
+}
+
+dependencies {
+    compile 'net.sf.supercsv:super-csv:2.2.1'
+    testCompile 'junit:junit:4.11'
+}
